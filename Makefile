@@ -1,10 +1,5 @@
 SHELL:=/bin/bash
-REGISTRY?=figurate
-IMAGE_NAME=lambda-function-python-template
-TAGS?=latest
-BUILD_ARGS?=
-NODEJS_VERSION=12
-AWS_DEFAULT_REGION?=ap-southeast-2
+include .env
 
 .PHONY: all build tag push
 
